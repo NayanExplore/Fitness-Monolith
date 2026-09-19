@@ -8,28 +8,8 @@ services:
       - key: DB_DRIVER
         value: org.postgresql.Driver
       - key: DB_USER
-        fromDatabase:
-          name: fitness-db
-          property: user
+        sync: false
       - key: DB_PWD
-        fromDatabase:
-          name: fitness-db
-          property: password
-      # We pass the host and db name to construct the JDBC URL dynamically in application.properties
-      - key: RENDER_DB_HOST
-        fromDatabase:
-          name: fitness-db
-          property: host
-      - key: RENDER_DB_NAME
-        fromDatabase:
-          name: fitness-db
-          property: database
-      # When deployed on Render, we construct the PostgreSQL JDBC URL
+        sync: false
       - key: DB_URL
-        value: jdbc:postgresql://fitness-db/fitnessdb
-
-databases:
-  - name: fitness-db
-    databaseName: fitnessdb
-    user: fitnessuser
-    plan: free
+        sync: false
