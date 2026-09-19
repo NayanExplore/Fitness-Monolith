@@ -56,7 +56,13 @@ A robust RESTful API backend designed to power fitness tracking applications, he
 
 You do not need a custom frontend to interact with this application. The API is fully documented and interactive via Swagger UI.
 
-Once the application is running, open your browser and navigate to:
+### Live Demo (Render)
+You can test the live API instantly directly in your browser:
+👉 **[https://fitness-api-aym2.onrender.com/swagger-ui/index.html](https://fitness-api-aym2.onrender.com/swagger-ui/index.html)**
+*(Note: As this is hosted on a free Render tier, the server may take ~50 seconds to spin up if it has been inactive).*
+
+### Local Development
+If you are running the application locally, open your browser and navigate to:
 👉 **`http://localhost:8080/swagger-ui/index.html`**
 
 ### Application Flow (Testing via Swagger)
