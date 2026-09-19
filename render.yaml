@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: fitness-api
+    env: docker
+    plan: free
+    healthCheckPath: /v3/api-docs
